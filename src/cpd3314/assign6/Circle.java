@@ -45,9 +45,43 @@
  */
 package cpd3314.assign6;
 
+import static java.lang.Math.PI;
+
 /**
- * @author <ENTER YOUR NAME HERE>
+ * @author Nilesh Kapadia
  */
 public class Circle {
-    // TODO: Build the Circle Class here
+    // TODO: Build the Circle Class here 
+     double radius;
+     final double pi = 3.14;
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+     
+    public Circle()
+    {  
+       this.radius = 0;
+    }
+     public Circle(double radius)
+    {  
+       this.radius= radius;
+    }
+     
+  public double getArea() {
+    double Area = PI * radius * radius;
+    return Area;
+  }
+   public double getDiameter() {
+     double Diameter = radius * 2;
+    return Diameter;
+  }
+    public double getCircumference() {
+     double circumference = 2 * PI * radius;
+    return circumference;
+  }
 }
+
