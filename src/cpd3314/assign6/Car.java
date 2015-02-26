@@ -65,6 +65,7 @@ public class Car {
         YearModel = model;
         make = make1;
         speed = 0;
+        //year=2021
     }
         public int getYearModel() {
         return YearModel;
